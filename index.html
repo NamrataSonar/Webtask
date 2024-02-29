@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- External script -->
+  <script src="myscript.js" defer></script>
+  
+  <!-- Title of the webpage -->
+  <title>Clickable Cards</title>
+</head>
+
+<body>
+
+  <!-- Container for the header text -->
+  <div class="container">
+    <div class="line-with-text">
+      <!-- Horizontal line -->
+      <hr class="line">
+      <!-- Header text -->
+      <div class="text">YAY! It's BOGO</div>
+    </div>
+  </div>
+
+  <!-- Grid container for cards -->
+  <div class="grid-container">
+    <!-- Card 1 -->
+    <div class="card" onclick="highlight(this)">
+      <div class="card-content">
+        <!-- Left content -->
+        <div class="left-content">
+          <!-- Radio button -->
+          <input type="radio" id="html1" name="fav_language" value="HTML" />
+          <!-- Product quantity -->
+          <h5>1 Unit</h5>
+          <!-- Price -->
+          <div class="right-content">
+            <div class="dollar"><mark>$ 10.00 USD</mark></div>
+          </div>
+        </div>
+        <!-- Discount -->
+        <h6>10% off</h6>
+        <!-- Standard price -->
+        <p class="standard-price">Standard Price</p>
+        <!-- Discounted price -->
+        <div class="right-content">
+          <div class="dollar2"><del>$ 24.00 USD</del></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" onclick="highlight(this)">
+      <div class="card-content">
+        <div class="left-content">
+          <input type="radio" id="html2" name="fav_language" value="HTML" />
+          <h5>2 Unit</h5>
+          <div class="right-content">
+            <div class="dollar"><mark>$ 10.00 USD</mark></div>
+          </div>
+        </div>
+        <h6>10% off</h6>
+        <div class="right-content">
+          <div class="dollar1"><del>$ 24.00 USD</del></div>
+        </div>
+
+        <!-- Options for size and color -->
+        <div class="row">
+          <div class="row">
+            <div class="column12">
+              <p>Size</p>
+              <p id="color">Colour</p>
+            </div>
+          </div>
+          <div class="column11">
+            <!-- Size options -->
+            <label for="cars">#1</label>
+            <select id="cars">
+              <option value="volvo">S</option>
+            </select>
+            <!-- Color options -->
+            <select id="cars">
+              <option value="volvo">Black</option>
+            </select>
+          </div>
+
+          <div class="column11">
+            <label for="cars">#2</label>
+            <select id="cars">
+              <option value="volvo">S</option>
+            </select>
+            <select id="cars">
+              <option value="volvo">Colour</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" onclick="highlight(this)">
+      <div class="card-content">
+        <div class="left-content">
+          <input type="radio" id="html3" name="fav_language" value="HTML" />
+          <h5>3 Unit</h5>
+          <div class="right-content">
+            <div class="dollar"><mark>$ 10.00 USD</mark></div>
+          </div>
+        </div>
+        <h6>10% off</h6>
+        <div class="right-content">
+          <div class="dollar1"><del>$ 24.00 USD</del></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section for free delivery -->
+    <div class="left-content">
+      <h5 id="red">Free Delivery</h5>
+      <div class="doller"><mark>Total: $19.00 USD</mark></div>
+    </div>
+
+    <!-- Button to add to cart -->
+    <div class="btn">
+      <button type="button">+ Add to Cart</button>
+    </div>
+
+    <!-- Powered by section -->
+    <div class="pumper">
+      <p class="pump">@ Powered by Pumper</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
